@@ -15,13 +15,18 @@ public class RockPaperGame {
 		Scanner input = new Scanner(System.in);
 		while(true) {
 		getCom();
-		System.out.println("==== 가위바위보 게임 ====");
-		System.out.println("0.가위 1.바위 2.보");
+		System.out.println("====== 가위바위보 게임 ======");
+		System.out.println("0.가위 1.바위 2.보 3.게임종료");
 		System.out.print("입력 : ");
 		n = input.nextInt();
-		if(n>2) {
+		if(n>3) {
 			System.out.println("다시 입력해 주세요! ! !");
+			System.out.println();
 			continue;
+		}
+		if(n==3) {
+			System.out.println("게임을 종료합니다.");
+			break;
 		}
 		Play();
 		result();	
