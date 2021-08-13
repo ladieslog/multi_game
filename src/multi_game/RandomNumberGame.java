@@ -12,6 +12,10 @@ public class RandomNumberGame {
 		while(true) {
 			System.out.print("숫자 입력 >>> ");
 			int userNum = scanner.nextInt();
+			if(userNum <= 0 || userNum > 100) {
+				System.out.println("숫자의 범위가 벗어났습니다. (1~100)");
+				continue;
+			}
 			int result = numberCheck(userNum, randomNum);
 			switch(result) {
 				case 2:
