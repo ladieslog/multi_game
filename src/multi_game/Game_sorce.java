@@ -32,7 +32,7 @@ public class Game_sorce {
 				case 3: rock.rockPaperGame(); break;
 				//김진성 코드
 				
-				case 4: //lot.lotteryGame(); break;
+				case 4: lot.lotteryGame(); break;
 				//송지현 코드
 				
 				case 5: base.nBaseBallGame(); break;

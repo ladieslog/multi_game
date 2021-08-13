@@ -8,7 +8,11 @@ public class LotteryGame {
 		return lots;
 		
 	}
-	
+	public void lotteryGame() {
+		make();
+		print();
+		
+	}
 	
 	       
 	         private int base = 45;
