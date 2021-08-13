@@ -3,13 +3,13 @@ package multi_game.ysshin;
 import java.util.Random;
 import java.util.Scanner;
 
-public class NBaseballGame {
+public class NBaseBallGame {
 	
-	public void gamestart() {
+	public void nBaseBallGame() {
 		Scanner sc = new Scanner(System.in);
 		Random rand = new Random();
         
-		// 정답값 받기(중복값X, 1~9, 3자리)
+		
         int[] ans = {0, 0, 0};
         for (int i = 0; i < 3; i++){
             boolean overlap = true;
@@ -28,7 +28,7 @@ public class NBaseballGame {
                 }
             }
         }
-        // 정답값 정수화
+       
         int ans_num = ans[0] * 100 + ans[1] * 10 + ans[2];
         System.out.println("정답 : " + ans[0] + " " + ans[1] + " " + ans[2]);
 
