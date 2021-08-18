@@ -10,5 +10,6 @@ public class Game_hieghtscore {
 		rock.score();
 		lot.score();
 		base.score();
+		
 	}
 }
