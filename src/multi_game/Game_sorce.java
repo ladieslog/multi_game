@@ -12,6 +12,7 @@ public class Game_sorce extends Game_hieghtscore {
 		NBaseBallGame base =new NBaseBallGame();
 		Game_hieghtscore sco =new Game_hieghtscore();
 
+		
 		int a,b;
 		System.out.println("게임에 오신것을 환영"
 				+ "합니다. 계정을 입력해주세요");
