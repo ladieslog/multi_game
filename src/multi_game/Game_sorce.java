@@ -2,14 +2,16 @@ package multi_game;
 
 import java.util.Scanner;
 
+import multi_game_jinsung.RockPaperGame;
+
 public class Game_sorce {
 	public static void main(String[] args) {
 		Scanner input =new Scanner(System.in);
 		Login_tap log =new Login_tap();
-		RandomNumberGame ran =new RandomNumberGame();
+//		RandomNumberGame ran =new RandomNumberGame();
 		RockPaperGame rock =new RockPaperGame();
-		LotteryGame lot =new LotteryGame();
-		NBaseBallGame base =new NBaseBallGame();
+	//	LotteryGame lot =new LotteryGame();
+//		NBaseBallGame base =new NBaseBallGame();
 		int a,b;
 		System.out.println("게임에 오신것을 환영합니다. 계정을 입력해주세요");
 		b=log.login();;
@@ -22,19 +24,19 @@ public class Game_sorce {
 				
 				a=input.nextInt();
 				switch(a) {
-				case 1: log.display(); break;
+				case 1: //log.display(); break;
 				//김성윤 조장 코드
 				
-				case 2: ran.gameStart(); break;
+				case 2: //ran.gameStart(); break;
 				//김준호 코드
 				
 				case 3: rock.rockPaperGame(); break;
 				//김진성 코드
 				
-				case 4: lot.lotteryGame(); break;
+				case 4:// lot.lotteryGame(); break;
 				//송지현 코드
 				
-				case 5: base.nBaseBallGame(); break;
+				case 5:// base.nBaseBallGame(); break;
 				//신윤수 코드 
 				
 				case 6: System.out.println("시스템을 종료합니다. ");
