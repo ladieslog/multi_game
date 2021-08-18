@@ -3,13 +3,8 @@ package multi_game.ysshin;
 import java.util.Random;
 import java.util.Scanner;
 
-public class NBaseBallGame {
-	public  int record=100;
-	
-	public void score() {
-		if(record == 100) System.out.println("아직 기록이 없습니다.");
-		else System.out.println("숫자야구 게임 최고기록 : " + record + "회");	
-	}
+
+public class NBaseBallGame extends NBaseballGameScore {
 	
 	public void nBaseBallGame() {
 		Scanner sc = new Scanner(System.in);
@@ -84,7 +79,6 @@ public class NBaseBallGame {
         }
         System.out.println("정답은 " + ans_num + " 이었습니다!");
         System.out.println(cnt + "번 만에 정답을 맞추셨습니다!");
-        if(record > cnt) record = cnt;
+        if(super.record > cnt) super.record = cnt;
 	}
 }
-
