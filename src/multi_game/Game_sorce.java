@@ -9,8 +9,8 @@ public class Game_sorce {
 		RandomNumberGame ran =new RandomNumberGame();
 		RockPaperGame rock =new RockPaperGame();
 		LotteryGame lot =new LotteryGame();
-
 		NBaseBallGame base =new NBaseBallGame();
+		Game_hieghtscore sco =new Game_hieghtscore();
 
 		int a,b;
 		System.out.println("게임에 오신것을 환영"
@@ -26,19 +26,19 @@ public class Game_sorce {
 				
 				a=input.nextInt();
 				switch(a) {
-				case 1: log.display(); break;
+				case 1: sco.display(); break;
 				//김성윤 조장 코드
 
-				case 2:// ran.gameStart(); break;
+				case 2: ran.gameStart(); break;
 				//김준호 코드
 				
-				case 3: //rock.rockPaperGame(); break;
+				case 3: rock.rockPaperGame(); break;
 				//김진성 코드
 				
-				case 4://lot.lotteryGame(); break;
+				case 4:lot.lotteryGame(); break;
 				//송지현 코드
 				
-				case 5: //base.nBaseBallGame(); break;
+				case 5: base.nBaseBallGame(); break;
 				//신윤수 코드 
 				
 				case 6: System.out.println("시스템을 종료합니다. ");
