@@ -35,7 +35,7 @@ public class NBaseBallGame {
         }
        
         int ans_num = ans[0] * 100 + ans[1] * 10 + ans[2];
-        System.out.println("정답 : " + ans[0] + " " + ans[1] + " " + ans[2]);
+        System.out.println("정답 : " + ans[0] + ans[1] + ans[2]);
 
         boolean correct = false;
         int cnt = 0;
@@ -51,7 +51,7 @@ public class NBaseBallGame {
             int[] try_arr = new int[3];
             
             while (overlap) {
-            	 System.out.print("숫자 입력 : ");
+            	System.out.print("숫자 입력 : ");
                 try_ans = sc.nextInt();
                 try_arr[0] = try_ans / 100;
                 try_arr[1] = (try_ans % 100) / 10;
