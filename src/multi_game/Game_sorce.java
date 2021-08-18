@@ -2,8 +2,8 @@ package multi_game;
 
 import java.util.Scanner;
 
-public class Game_sorce {
-	public static void main(String[] args) {
+public class Game_sorce extends Game_hieghtscore {
+	public static void main(String[] args)  {
 		Scanner input =new Scanner(System.in);
 		Login_tap log =new Login_tap();
 		RandomNumberGame ran =new RandomNumberGame();
@@ -20,7 +20,7 @@ public class Game_sorce {
 		if(b==1) {
 			while(true) {
 				System.out.println("원하는 보기를 선택해주세요 : \n"
-						+ "1.계정명 보기 \n2. 랜덤 숫자 맞추기 \n"
+						+ "1.게임 전적보기 \n2. 랜덤 숫자 맞추기 \n"
 						+ "3.가위바위보 게임 \n 4.로또게임 \n5. 숫자 야구게임\n"
 						+ "6.게임 나가기");
 				

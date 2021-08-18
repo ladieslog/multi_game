@@ -3,13 +3,12 @@ package multi_game;
 import java.util.Random;
 import java.util.Scanner;
 
-public class NBaseBallGame {
+public class NBaseBallGame extends NBaseballGameScore {
 	
 	public void nBaseBallGame() {
 		Scanner sc = new Scanner(System.in);
 		Random rand = new Random();
         
-		
         int[] ans = {0, 0, 0};
         for (int i = 0; i < 3; i++){
             boolean overlap = true;
@@ -30,7 +29,7 @@ public class NBaseBallGame {
         }
        
         int ans_num = ans[0] * 100 + ans[1] * 10 + ans[2];
-        System.out.println("정답 : " + ans[0] + " " + ans[1] + " " + ans[2]);
+        System.out.println("정답 : " + ans[0] + ans[1] + ans[2]);
 
         boolean correct = false;
         int cnt = 0;
@@ -46,7 +45,7 @@ public class NBaseBallGame {
             int[] try_arr = new int[3];
             
             while (overlap) {
-            	 System.out.print("숫자 입력 : ");
+            	System.out.print("숫자 입력 : ");
                 try_ans = sc.nextInt();
                 try_arr[0] = try_ans / 100;
                 try_arr[1] = (try_ans % 100) / 10;
@@ -79,5 +78,6 @@ public class NBaseBallGame {
         }
         System.out.println("정답은 " + ans_num + " 이었습니다!");
         System.out.println(cnt + "번 만에 정답을 맞추셨습니다!");
+        if(super.record > cnt) super.record = cnt;
 	}
 }
