@@ -1,7 +1,7 @@
 package multi_game.KJH;
 
 public class RandomNumberGameScore {
-	protected int heightScore = 100;
+	protected static int heightScore = 100;
 	
 	
 	public void score() {

@@ -21,8 +21,8 @@ public class RandomNumberGame extends RandomNumberGameScore {
 				case 2:
 					System.out.println("정답입니다!");
 					System.out.println("횟수는 " + count + "번 입니다.");
-					if(count<super.heightScore) {
-						super.heightScore = count;
+					if(count<heightScore) {
+						heightScore = count;
 					}
 					return;
 				case 1:
