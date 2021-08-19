@@ -11,7 +11,7 @@ public class Game_hieghtscore {
 		System.out.println("\n가위바위보 전적보기");
 		rock.score();
 		System.out.println("\n로또 보너스보기");
-		//lot.score();
+		lot.score();
 		System.out.println("\n야구전적 보기");
 		base.score();
 		
