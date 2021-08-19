@@ -7,9 +7,7 @@ public class LotteryGame extends Game_hieghtscore{
 	private static int[] lots = new int[ballNum];
 	
 	public void score() {
-		System.out.println("랜덤 추가 숫자 뽑기");
-		System.out.println(lots);
-		
+	
 		
 		while(true) {int bonus= rand();
 	         if(!contain(bonus)) {
