@@ -8,7 +8,7 @@ public class LotteryGame extends Game_hieghtscore{
 	
 	public void score() {
 		System.out.println("랜덤 추가 숫자 뽑기");
-		System.out.println(lots);
+	
 		
 		
 		while(true) {int bonus= rand();

@@ -3,18 +3,18 @@ package multi_game;
 import java.util.Scanner;
 
 class Count {
-	protected int cntWin,cntDrow,cntDe;
+	protected static int cntWin,cntDrow,cntDe;
 	
 	public int getCntWin() {
-		return cntWin++;
+		return cntWin;
 	}
 
 	public int getCntDrow() {
-		return cntDrow++;
+		return cntDrow;
 	}
 
 	public int getCntDe() {
-		return cntDe++;
+		return cntDe;
 	}
 
 	public void score() {
@@ -39,6 +39,7 @@ public class RockPaperGame extends Count {
 		n = input.nextInt();
 		if(n==3) {
 			score();
+			continue;
 		}
 		if(n>4) {
 			System.out.println("다시 입력해 주세요! ! !");
@@ -60,7 +61,7 @@ public class RockPaperGame extends Count {
 			System.out.println("Player : 가위");
 		}else if(n==1) {
 			System.out.println("Player : 바위");
-		}else {
+		}else if(n==2){
 			System.out.println("Player : 보");
 		}
 		
@@ -68,7 +69,7 @@ public class RockPaperGame extends Count {
 			System.out.println("Computer : 가위");
 		}else if(com==1) {
 			System.out.println("Computer : 바위");
-		}else {
+		}else if(com==2){
 			System.out.println("Computer : 보");
 		}
 	}
@@ -77,36 +78,35 @@ public class RockPaperGame extends Count {
 		if(n==0) {
 			if(com==1) {
 				System.out.println("=== 패배 ===");
-				getCntDe();
+				cntDe++;
 			}else if(com == 2) {
 				System.out.println("=== 승리 ===");
-				getCntWin();
+				cntWin++;
 			}else if(com==0){
 				System.out.println("=== 무승부 ===");
-				getCntDrow();
+				cntDrow++;
 			}
 		}else if(n==1) {
 			if(com==0) {
 				System.out.println("=== 승리 ===");
-				getCntWin();
+				cntWin++;
 			}else if(com==2) {
 				System.out.println("=== 패배 ===");
-				getCntDe();
+				cntDe++;
 			}else if(com ==1){
 				System.out.println("=== 무승부 ===");
-				getCntDrow();
+				cntDrow++;
 			}
-			
 		}else if(n==2) {
 			if(com == 0) {
 				System.out.println("=== 패배 ===");
-				getCntDe();
+				cntDe++;
 			}else if(com == 1) {
 				System.out.println("=== 승리 ===");
-				getCntWin();
+				cntWin++;
 			}else if(com ==2){
 				System.out.println("=== 무승부 ===");
-				getCntDrow();
+				cntDrow++;
 			}
 		}
 	}
