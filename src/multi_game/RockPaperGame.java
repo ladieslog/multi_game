@@ -3,7 +3,7 @@ package multi_game;
 import java.util.Scanner;
 
 class Count {
-	protected static int cntWin,cntDrow,cntDe;
+	public int cntWin,cntDrow,cntDe;
 	
 	public int getCntWin() {
 		return cntWin;
