@@ -2,7 +2,7 @@ package multi_game.ysshin;
 
 public class NBaseballGameScore {
 	
-	protected int record=100;
+	protected static int record=100;
 		
 	public void score() {
 		if(record == 100) System.out.println("아직 기록이 없습니다.");
