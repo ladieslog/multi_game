@@ -3,7 +3,7 @@ package multi_game_jinsung;
 import java.util.Scanner;
 
 class Count {
-	protected int cntWin,cntDrow,cntDe;
+	protected static int cntWin,cntDrow,cntDe;
 	
 	public int getCntWin() {
 		return cntWin;
